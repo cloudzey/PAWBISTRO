@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48d70b4a0f28d945adf5bcee44b0dc0, type: 3}
+  m_Name: L10
+  m_EditorClassIdentifier: 
+  levelIndex: 10
+  targetGold: 100
+  unlockedProducts:
+  - {fileID: 11400000, guid: 7d7a777552d17ec4da86f7beff128cd6, type: 2}
+  - {fileID: 11400000, guid: 3bbd8330916fe3a4ca23e50073cbb542, type: 2}
