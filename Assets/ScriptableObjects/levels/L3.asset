@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelIndex: 3
   targetGold: 100
-  unlockedProducts:
+  previousLevel: {fileID: 11400000, guid: 464b3ba5ff072c94bb8084d03c421fa5, type: 2}
+  newUnlockedProducts:
   - {fileID: 11400000, guid: 87b9200604d126e4584a42ddf255abdf, type: 2}
   - {fileID: 11400000, guid: 05d5e12c0c828a6458dad251fbbfce7a, type: 2}
   - {fileID: 11400000, guid: e50fcd498e08e7e418ce57cb0fdb3aa0, type: 2}
-  - {fileID: 11400000, guid: bc8d4d79dca972741831c9108a30a6e1, type: 2}
   - {fileID: 11400000, guid: 1d0f565761c2bad47a1f7a5cc7893898, type: 2}
   - {fileID: 11400000, guid: e119ab80006836945aba3cecd8e4ad28, type: 2}
   - {fileID: 11400000, guid: dbddcdce8293cb74f8d4d7f53c823f35, type: 2}
+  - {fileID: 11400000, guid: bc8d4d79dca972741831c9108a30a6e1, type: 2}
   - {fileID: 11400000, guid: 50ed4aea063f0884395a1482394640ef, type: 2}
   - {fileID: 11400000, guid: 86bc3132408f30c418d4712fa422fc03, type: 2}
