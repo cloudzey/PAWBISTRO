@@ -7,5 +7,9 @@ public class LevelData : ScriptableObject
     public int levelIndex = 1;
     public int targetGold = 100;
 
-    public List<ProductData> unlockedProducts = new List<ProductData>();
+    [Header("Chain")]
+    public LevelData previousLevel;
+
+    [Header("Only NEW products for this level")]
+    public List<ProductData> newUnlockedProducts = new List<ProductData>();
 }
