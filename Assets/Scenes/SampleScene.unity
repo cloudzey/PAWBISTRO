@@ -673,7 +673,6 @@ GameObject:
   - component: {fileID: 217157716}
   - component: {fileID: 217157715}
   - component: {fileID: 217157718}
-  - component: {fileID: 217157719}
   m_Layer: 5
   m_Name: Btn_Cupcake
   m_TagString: Untagged
@@ -744,19 +743,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 217157716}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 217157719}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &217157716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,20 +796,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   product: {fileID: 11400000, guid: 201e25b0c57fae74294f4f154f5f5514, type: 2}
   levelManager: {fileID: 2051602850}
---- !u!114 &217157719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217157713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: 201e25b0c57fae74294f4f154f5f5514, type: 2}
 --- !u!1 &279042585
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +886,6 @@ GameObject:
   - component: {fileID: 357963337}
   - component: {fileID: 357963336}
   - component: {fileID: 357963335}
-  - component: {fileID: 357963339}
   m_Layer: 5
   m_Name: Btn_Americano
   m_TagString: Untagged
@@ -998,19 +970,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 357963337}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 357963339}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &357963337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,20 +1009,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357963333}
   m_CullTransparentMesh: 1
---- !u!114 &357963339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357963333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: bdd8a9c66c280a9439acc4d940307741, type: 2}
 --- !u!1 &386929813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,8 +1341,6 @@ GameObject:
   - component: {fileID: 443734771}
   - component: {fileID: 443734770}
   - component: {fileID: 443734769}
-  - component: {fileID: 443734768}
-  - component: {fileID: 443734773}
   m_Layer: 5
   m_Name: Btn_Lemonade
   m_TagString: Untagged
@@ -1424,20 +1368,6 @@ RectTransform:
   m_AnchoredPosition: {x: -18, y: -84}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &443734768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443734766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 0}
-  levelManager: {fileID: 0}
 --- !u!114 &443734769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1495,19 +1425,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 443734771}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 443734773}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &443734771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,20 +1464,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443734766}
   m_CullTransparentMesh: 1
---- !u!114 &443734773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443734766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: e77605517a761334c9b348b54c143feb, type: 2}
 --- !u!1 &511280591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,7 +1747,6 @@ GameObject:
   - component: {fileID: 521060516}
   - component: {fileID: 521060515}
   - component: {fileID: 521060514}
-  - component: {fileID: 521060518}
   m_Layer: 5
   m_Name: Btn_Mayo
   m_TagString: Untagged
@@ -1928,19 +1831,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 521060516}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 521060518}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &521060516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1979,20 +1870,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521060512}
   m_CullTransparentMesh: 1
---- !u!114 &521060518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521060512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: c3ed82a06ba37fe4ba0f7d292fe2472a, type: 2}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,7 +2315,6 @@ GameObject:
   - component: {fileID: 741189464}
   - component: {fileID: 741189463}
   - component: {fileID: 741189462}
-  - component: {fileID: 741189466}
   m_Layer: 5
   m_Name: Btn_FrenchFries
   m_TagString: Untagged
@@ -2523,19 +2399,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 741189464}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 741189466}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &741189464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2574,20 +2438,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741189460}
   m_CullTransparentMesh: 1
---- !u!114 &741189466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741189460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: c341bcb1495365d498e7cd62b0188c9e, type: 2}
 --- !u!1 &774696242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,7 +2451,6 @@ GameObject:
   - component: {fileID: 774696246}
   - component: {fileID: 774696245}
   - component: {fileID: 774696244}
-  - component: {fileID: 774696248}
   m_Layer: 5
   m_Name: Btn_Espresso
   m_TagString: Untagged
@@ -2686,19 +2535,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 774696246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 774696248}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &774696246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2737,20 +2574,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774696242}
   m_CullTransparentMesh: 1
---- !u!114 &774696248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774696242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: df339c9b02b1c8c4392d8f8c0943130d, type: 2}
 --- !u!1 &809516795
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,7 +3721,6 @@ GameObject:
   - component: {fileID: 1069895449}
   - component: {fileID: 1069895448}
   - component: {fileID: 1069895447}
-  - component: {fileID: 1069895451}
   m_Layer: 5
   m_Name: Btn_Ketchup
   m_TagString: Untagged
@@ -3983,19 +3805,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1069895449}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1069895451}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1069895449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4034,20 +3844,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069895445}
   m_CullTransparentMesh: 1
---- !u!114 &1069895451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069895445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: 876d3b5d38a06d04b8b6ce444c1b28fd, type: 2}
 --- !u!1 &1104354806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4373,7 +4169,6 @@ GameObject:
   - component: {fileID: 1484812235}
   - component: {fileID: 1484812234}
   - component: {fileID: 1484812233}
-  - component: {fileID: 1484812237}
   m_Layer: 5
   m_Name: Btn_Ice
   m_TagString: Untagged
@@ -4458,19 +4253,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1484812235}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1484812237}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1484812235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4509,20 +4292,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484812231}
   m_CullTransparentMesh: 1
---- !u!114 &1484812237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484812231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: 0b2f0e24fe051764092644bfaa9d9e42, type: 2}
 --- !u!1 &1523999719
 GameObject:
   m_ObjectHideFlags: 0
@@ -4536,7 +4305,6 @@ GameObject:
   - component: {fileID: 1523999723}
   - component: {fileID: 1523999722}
   - component: {fileID: 1523999721}
-  - component: {fileID: 1523999725}
   m_Layer: 5
   m_Name: Btn_FriedChicken
   m_TagString: Untagged
@@ -4621,19 +4389,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1523999723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1523999725}
-        m_TargetAssemblyTypeName: ServeButton, Assembly-CSharp
-        m_MethodName: Serve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1523999723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4672,20 +4428,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523999719}
   m_CullTransparentMesh: 1
---- !u!114 &1523999725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523999719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ac2f93c37bdc941ac6b4f9617425b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 2051602850}
-  product: {fileID: 11400000, guid: 56f456327dc900a43a95bc87bfe283f2, type: 2}
 --- !u!1 &1616380546
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,12 @@ public ProductData CurrentOrder => currentOrder;
     private void Start()
     {
         StartLevel();
+        
+    
     }
+
+
+    
     void UpdateCoinUI()
 {
     if (coinText != null)
@@ -54,18 +59,20 @@ public void AddCoin(int amount)
 }
 public void TryServeProduct(ProductData served)
 {
-    if (currentOrder == null) return;
+    if (served == null) return;
 
-    if (served == currentOrder)
+    if (CurrentOrder == served)
     {
-        Debug.Log("✅ Correct product served!");
+        Debug.Log("Correct product served!");
+        AddCoin(served.price > 0 ? served.price : 10);
         CreateNewOrder();
     }
     else
     {
-        Debug.Log("❌ Wrong product served!");
+        Debug.Log("Wrong product served!");
     }
 }
+
 
 
 }

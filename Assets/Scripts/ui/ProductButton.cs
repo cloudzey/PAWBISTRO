@@ -16,6 +16,7 @@ public class ProductButton : MonoBehaviour
 
     void OnClick()
     {
+       Debug.Log("BTN CLICK: " + (product != null ? product.displayName : "NULL PRODUCT"));
         if (levelManager != null && product != null)
             levelManager.TryServeProduct(product);
     }
