@@ -8,17 +8,17 @@ public class ProductPanelPopulator : MonoBehaviour
     public GameObject buttonPrefab;
 
     [Header("Logic")]
-    public LevelManager levelManager;
+    
     public List<ProductData> productsToShow;
 
-    private void Start()
-    {
-        Populate();
-    }
+    //private void Start()
+   // {
+   //     Populate();
+    //}
 
     public void Populate()
     {
-        Debug.Log($"{contentParent.name}: Populate -> {productsToShow.Count} ürün basýlýyor");
+        Debug.Log($"{contentParent.name}: Populate -> {productsToShow.Count} ï¿½rï¿½n basï¿½lï¿½yor");
 
         foreach (Transform child in contentParent)
             Destroy(child.gameObject);
@@ -30,7 +30,7 @@ public class ProductPanelPopulator : MonoBehaviour
 
             ProductButton pb = btnGO.GetComponent<ProductButton>();
             pb.product = product;
-            pb.levelManager = levelManager;
+            
         }
     }
 }

@@ -72,6 +72,36 @@ public void TryServeProduct(ProductData served)
         Debug.Log("Wrong product served!");
     }
 }
+public void TryServeFromHand()
+{
+    if (HandSystem.Instance == null)
+    {
+        Debug.LogError("HandSystem.Instance yok! Sahneye HandSystem objesi ekli mi?");
+        return;
+    }
+
+    if (CurrentOrder == null)
+    {
+        Debug.LogWarning("Sipariş yok (CurrentOrder null).");
+        return;
+    }
+
+    // Şimdilik tek ürün: elde kutusunda sipariş ürünü var mı?
+    bool hasItem = HandSystem.Instance.Items.Contains(CurrentOrder);
+
+    if (hasItem)
+    {
+        Debug.Log("Correct product served (from hand)!");
+        AddCoin(CurrentOrder.price > 0 ? CurrentOrder.price : 10);
+        HandSystem.Instance.Clear();   // elde boşalsın
+        CreateNewOrder();
+    }
+    else
+    {
+        Debug.Log("Wrong product / missing item in hand!");
+    }
+}
+
 
 
 

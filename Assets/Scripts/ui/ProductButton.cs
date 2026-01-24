@@ -1,19 +1,24 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ProductButton : MonoBehaviour
 {
     public ProductData product;
-    public LevelManager levelManager;
 
     public void OnClick()
     {
-        if (product == null || levelManager == null)
+        if (product == null)
         {
-            Debug.LogError("ProductButton: product veya levelManager NULL");
+            Debug.LogError("ProductButton: product NULL");
             return;
         }
 
-        levelManager.TryServeProduct(product);
+        if (HandSystem.Instance == null)
+        {
+            Debug.LogError("ProductButton: HandSystem.Instance NULL (sahnede HandSystem objesi var mı?)");
+            return;
+        }
+
+        HandSystem.Instance.Add(product);
+        Debug.Log($"Hand'e eklendi: {product.displayName}");
     }
 }
