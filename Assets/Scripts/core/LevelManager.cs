@@ -14,13 +14,10 @@ public ProductData CurrentOrder => currentOrder;
 
     private void Start()
     {
+        Debug.Log("LevelManager Start çalıştı: " + gameObject.name);
         StartLevel();
-        
-    
     }
 
-
-    
     void UpdateCoinUI()
 {
     if (coinText != null)
@@ -34,13 +31,14 @@ public void AddCoin(int amount)
 
     public void StartLevel()
     {
-        Debug.Log("LEVEL STARTED: " + (currentLevel != null ? currentLevel.levelIndex : -1));
-        
-         UpdateCoinUI();
-         CreateNewOrder();
-        
+        Debug.Log($"StartLevel() currentLevel = {(currentLevel ? currentLevel.name : "NULL")}");
+        Debug.Log($"Unlocked list count = {(currentLevel != null && currentLevel.newUnlockedProducts != null ? currentLevel.newUnlockedProducts.Count : -1)}");
+
+        UpdateCoinUI();
+        CreateNewOrder();
     }
-   public void CreateNewOrder()
+
+    public void CreateNewOrder()
 {
     if (currentLevel == null || currentLevel.newUnlockedProducts == null || currentLevel.newUnlockedProducts.Count == 0)
     {
