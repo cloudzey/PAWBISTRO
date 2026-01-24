@@ -6,18 +6,14 @@ public class ProductButton : MonoBehaviour
     public ProductData product;
     public LevelManager levelManager;
 
-    private Button btn;
-
-    private void Awake()
+    public void OnClick()
     {
-        btn = GetComponent<Button>();
-        btn.onClick.AddListener(OnClick);
-    }
+        if (product == null || levelManager == null)
+        {
+            Debug.LogError("ProductButton: product veya levelManager NULL");
+            return;
+        }
 
-    void OnClick()
-    {
-       Debug.Log("BTN CLICK: " + (product != null ? product.displayName : "NULL PRODUCT"));
-        if (levelManager != null && product != null)
-            levelManager.TryServeProduct(product);
+        levelManager.TryServeProduct(product);
     }
 }
