@@ -85,7 +85,9 @@ public void TryServeFromHand()
     }
 
     // Şimdilik tek ürün: elde kutusunda sipariş ürünü var mı?
-    bool hasItem = HandSystem.Instance.Items.Contains(CurrentOrder);
+    bool hasItem = HandSystem.Instance.HasItem(CurrentOrder);
+
+
 
     if (hasItem)
     {

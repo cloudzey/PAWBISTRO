@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4736274862841705337}
   - component: {fileID: 913582068110249127}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: txt_x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -256,7 +256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7003911159710142532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3273202833333235011
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: item
+  m_text: item name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -405,7 +417,7 @@ GameObject:
   - component: {fileID: 9128116281846851562}
   - component: {fileID: 6330898654167807658}
   - component: {fileID: 2035377062936078205}
-  - component: {fileID: 1415847832099334508}
+  - component: {fileID: 9164355552373958519}
   m_Layer: 5
   m_Name: PF_HandItem
   m_TagString: Untagged
@@ -516,7 +528,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1415847832099334508
+--- !u!114 &9164355552373958519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
