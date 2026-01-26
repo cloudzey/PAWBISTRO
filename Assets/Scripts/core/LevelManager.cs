@@ -9,6 +9,23 @@ public class LevelManager : MonoBehaviour
     private ProductData currentOrder;
     public TMP_Text coinText;
     private int coin = 0;
+    [Header("Craft - Hamburger")]
+[SerializeField] private ProductData hamburgerProduct;
+[SerializeField] private ProductData bunProduct;
+[SerializeField] private ProductData lettuceProduct;
+[SerializeField] private ProductData tomatoProduct;
+[SerializeField] private ProductData pattyProduct;
+
+[SerializeField] private HandSystem handSystem;
+
+private bool hbBun, hbLettuce, hbTomato, hbPatty;
+[SerializeField] private ProductData cheeseburgerProduct;
+[SerializeField] private ProductData cheddarProduct;
+
+private bool hbCheddar;
+
+
+
 
 public ProductData CurrentOrder => currentOrder;
 
@@ -40,6 +57,8 @@ public void AddCoin(int amount)
 
     public void CreateNewOrder()
 {
+    
+
     if (currentLevel == null || currentLevel.newUnlockedProducts == null || currentLevel.newUnlockedProducts.Count == 0)
     {
         Debug.LogWarning("No unlocked products in this level!");
@@ -54,7 +73,18 @@ public void AddCoin(int amount)
         orderText.text = "Order: " + currentOrder.displayName;
 
     Debug.Log("NEW ORDER: " + currentOrder.displayName);
+    ResetCraftProgress();
+   
+
+
 }
+
+private void ResetCraftProgress()
+{
+    hbBun = hbLettuce = hbTomato = hbPatty = hbCheddar = false;
+}
+
+
 public void TryServeProduct(ProductData served)
 {
     if (served == null) return;
@@ -101,6 +131,55 @@ public void TryServeFromHand()
         Debug.Log("Wrong product / missing item in hand!");
     }
 }
+public void AddHamburgerIngredient(ProductData ingredient)
+{
+    // Sadece hamburger/cheeseburger order'larında craft ilerlesin
+    if (CurrentOrder != hamburgerProduct && CurrentOrder != cheeseburgerProduct)
+    {
+        Debug.Log("Bu order burger değil, ingredient sayılmadı.");
+        return;
+    }
+
+    if (ingredient == bunProduct) hbBun = true;
+    else if (ingredient == lettuceProduct) hbLettuce = true;
+    else if (ingredient == tomatoProduct) hbTomato = true;
+    else if (ingredient == pattyProduct) hbPatty = true;
+    else if (ingredient == cheddarProduct) hbCheddar = true;
+    else return;
+
+    Debug.Log($"Burger progress → Bun:{hbBun} Lettuce:{hbLettuce} Tomato:{hbTomato} Patty:{hbPatty} Cheddar:{hbCheddar}");
+
+    bool baseComplete = hbBun && hbLettuce && hbTomato && hbPatty;
+
+    // Cheeseburger order'ında cheddar zorunlu olsun
+    if (CurrentOrder == cheeseburgerProduct && baseComplete && !hbCheddar)
+    {
+        Debug.Log("Cheeseburger için Cheddar eksik!");
+        return;
+    }
+
+    if (baseComplete)
+    {
+        // Cheddar eklendiyse sonuç cheeseburger
+        ProductData result = hbCheddar ? cheeseburgerProduct : hamburgerProduct;
+
+        Debug.Log($"✅ Burger tamamlandı! Sonuç: {result.displayName}");
+        GiveProductToHand(result);
+        ResetCraftProgress();
+    }
+}
+
+private void GiveProductToHand(ProductData product)
+{
+    if (handSystem == null)
+    {
+        Debug.LogError("HandSystem referansı yok!");
+        return;
+    }
+
+    handSystem.Add(product);
+}
+
 
 
 
