@@ -10,6 +10,20 @@ public class UIManager : MonoBehaviour
     public GameObject panelDrinksMenu;
     public GameObject panelCoffeeMenu;
     public GameObject panelSyrupMenu;
+    public GameObject panelMainCounter;
+     public GameObject panelFastFoodCounter;
+
+public void OpenMainCounter()
+{
+    panelMainCounter.SetActive(true);
+    panelFastFoodCounter.SetActive(false);
+}
+
+public void OpenFastFoodCounter()
+{
+    panelMainCounter.SetActive(false);
+    panelFastFoodCounter.SetActive(true);
+}
     
     private ScreenType lastScreenBeforeOverlay;
 
