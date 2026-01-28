@@ -23,6 +23,13 @@ private bool hbBun, hbLettuce, hbTomato, hbPatty;
 [SerializeField] private ProductData cheddarProduct;
 
 private bool hbCheddar;
+[Header("Craft - Hotdog")]
+[SerializeField] private ProductData hotdogProduct;
+[SerializeField] private ProductData hotdogBunProduct;
+[SerializeField] private ProductData sausageProduct;
+
+private bool hdBun, hdSausage;
+
 
 
 
@@ -82,6 +89,7 @@ public void AddCoin(int amount)
 private void ResetCraftProgress()
 {
     hbBun = hbLettuce = hbTomato = hbPatty = hbCheddar = false;
+    hdBun = hdSausage = false;
 }
 
 
@@ -179,6 +187,28 @@ private void GiveProductToHand(ProductData product)
 
     handSystem.Add(product);
 }
+public void AddHotdogIngredient(ProductData ingredient)
+{
+    if (CurrentOrder != hotdogProduct)
+    {
+        Debug.Log("Bu order hotdog değil, ingredient sayılmadı.");
+        return;
+    }
+
+    if (ingredient == hotdogBunProduct) hdBun = true;
+    else if (ingredient == sausageProduct) hdSausage = true;
+    else return;
+
+    Debug.Log($"Hotdog progress → Bun:{hdBun} Sausage:{hdSausage}");
+
+    if (hdBun && hdSausage)
+    {
+        Debug.Log("🌭 Hotdog tamamlandı! Elde ürüne ekleniyor.");
+        GiveProductToHand(hotdogProduct);
+        hdBun = hdSausage = false; // sadece hotdog kısmını resetledik
+    }
+}
+
 
 
 
