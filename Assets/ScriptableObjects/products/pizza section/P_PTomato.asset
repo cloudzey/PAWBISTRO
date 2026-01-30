@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab17f29dee0ed5b4389099d47a16627a, type: 3}
-  m_Name: P_Hamburger
+  m_Name: P_PTomato
   m_EditorClassIdentifier: 
-  id: hamburger
-  displayName: Hamburger
+  id: pizza_tomato
+  displayName: Tomato
   icon: {fileID: 0}
-  price: 12
-  type: 1
+  price: 10
+  type: 0

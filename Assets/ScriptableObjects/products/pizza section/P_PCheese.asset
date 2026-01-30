@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab17f29dee0ed5b4389099d47a16627a, type: 3}
-  m_Name: P_SearedScallops
+  m_Name: P_PCheese
   m_EditorClassIdentifier: 
-  id: seared_scallops
-  displayName: "Deniz Tara\u011F\u0131"
+  id: pizza_cheese
+  displayName: Cheese
   icon: {fileID: 0}
-  price: 38
-  type: 1
+  price: 10
+  type: 0

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab17f29dee0ed5b4389099d47a16627a, type: 3}
-  m_Name: P_BobaTea
+  m_Name: P_PizzaSauce
   m_EditorClassIdentifier: 
-  id: bobatea
-  displayName: Boba Tea
+  id: pizza_sauce
+  displayName: Pizza Sauce
   icon: {fileID: 0}
   price: 10
-  type: 1
+  type: 0
