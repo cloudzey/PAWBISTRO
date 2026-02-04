@@ -264,7 +264,6 @@ GameObject:
   - component: {fileID: 32566685}
   - component: {fileID: 32566684}
   - component: {fileID: 32566683}
-  - component: {fileID: 32566682}
   - component: {fileID: 32566686}
   m_Layer: 5
   m_Name: Btn_turkish_coffee
@@ -293,19 +292,6 @@ RectTransform:
   m_AnchoredPosition: {x: 87.72975, y: -15}
   m_SizeDelta: {x: 175.4595, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &32566682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32566680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 05d5e12c0c828a6458dad251fbbfce7a, type: 2}
 --- !u!114 &32566683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,7 +336,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 32566682}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -2033,9 +2019,9 @@ RectTransform:
   - {fileID: 1666823547}
   m_Father: {fileID: 1650696515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -15}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &166100694
@@ -2050,7 +2036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 86bc3132408f30c418d4712fa422fc03, type: 2}
+  product: {fileID: 11400000, guid: 7e84a92441237794584069a9d0058142, type: 2}
 --- !u!114 &166100695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2316,9 +2302,9 @@ RectTransform:
   - {fileID: 1292243163}
   m_Father: {fileID: 1650696515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183025177
@@ -2333,7 +2319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: fc224635fb0c6f14eb1efb1d42b81676, type: 2}
+  product: {fileID: 11400000, guid: 4899c6f574c8bbf46a3ad79ab4d5383c, type: 2}
 --- !u!114 &183025178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2700,7 +2686,6 @@ GameObject:
   - component: {fileID: 202907217}
   - component: {fileID: 202907216}
   - component: {fileID: 202907215}
-  - component: {fileID: 202907214}
   - component: {fileID: 202907218}
   m_Layer: 5
   m_Name: Btn_espresso
@@ -2729,19 +2714,6 @@ RectTransform:
   m_AnchoredPosition: {x: 87.72975, y: -75}
   m_SizeDelta: {x: 175.4595, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &202907214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 202907212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: df339c9b02b1c8c4392d8f8c0943130d, type: 2}
 --- !u!114 &202907215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2786,7 +2758,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 202907214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -3004,7 +2976,6 @@ GameObject:
   - component: {fileID: 263813597}
   - component: {fileID: 263813596}
   - component: {fileID: 263813595}
-  - component: {fileID: 263813594}
   m_Layer: 5
   m_Name: Btn_donut
   m_TagString: Untagged
@@ -3032,19 +3003,6 @@ RectTransform:
   m_AnchoredPosition: {x: 407, y: -118}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &263813594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263813592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: bd5194354e7e7bd439750efe820b1a40, type: 2}
 --- !u!114 &263813595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3089,7 +3047,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 263813594}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -3121,8 +3079,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -6701405823589270869, guid: f5958d4127c0c874a9da5491f2d739f3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3498,7 +3456,6 @@ GameObject:
   - component: {fileID: 342516008}
   - component: {fileID: 342516007}
   - component: {fileID: 342516006}
-  - component: {fileID: 342516005}
   m_Layer: 5
   m_Name: Btn_Ranch
   m_TagString: Untagged
@@ -3526,19 +3483,6 @@ RectTransform:
   m_AnchoredPosition: {x: -159, y: -65}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &342516005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342516003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 0a33ffe3a4e65394a8fb778fb132062a, type: 2}
 --- !u!114 &342516006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3583,7 +3527,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 342516005}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -3645,7 +3589,6 @@ GameObject:
   - component: {fileID: 348914861}
   - component: {fileID: 348914860}
   - component: {fileID: 348914859}
-  - component: {fileID: 348914858}
   - component: {fileID: 348914862}
   m_Layer: 5
   m_Name: Btn_cherry_juice
@@ -3674,19 +3617,6 @@ RectTransform:
   m_AnchoredPosition: {x: 81.6973, y: -53}
   m_SizeDelta: {x: 163.3946, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &348914858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 348914856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 90b5082fc0b508c4498102027c3a01ca, type: 2}
 --- !u!114 &348914859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3731,7 +3661,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 348914858}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -3813,8 +3743,8 @@ GameObject:
   - component: {fileID: 361148763}
   - component: {fileID: 361148762}
   - component: {fileID: 361148761}
-  - component: {fileID: 361148760}
   - component: {fileID: 361148764}
+  - component: {fileID: 361148765}
   m_Layer: 5
   m_Name: Btn_latte
   m_TagString: Untagged
@@ -3842,19 +3772,6 @@ RectTransform:
   m_AnchoredPosition: {x: 87.72975, y: -45}
   m_SizeDelta: {x: 175.4595, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &361148760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361148758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 29cb56ba1c1a5d24b80032fd7222a7cd, type: 2}
 --- !u!114 &361148761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3899,7 +3816,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 361148760}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -3969,6 +3886,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &361148765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361148758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  product: {fileID: 11400000, guid: 2611d22c7fff599438a333829025d990, type: 2}
 --- !u!1 &385544507
 GameObject:
   m_ObjectHideFlags: 0
@@ -5669,7 +5599,6 @@ GameObject:
   - component: {fileID: 668851630}
   - component: {fileID: 668851629}
   - component: {fileID: 668851628}
-  - component: {fileID: 668851627}
   - component: {fileID: 668851631}
   m_Layer: 5
   m_Name: Btn_vanilla
@@ -5698,19 +5627,6 @@ RectTransform:
   m_AnchoredPosition: {x: 85.5015, y: -15}
   m_SizeDelta: {x: 171.003, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &668851627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668851625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 0315d32882d0d7e4bb2ee873f5192273, type: 2}
 --- !u!114 &668851628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5755,7 +5671,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 668851627}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -6612,7 +6528,6 @@ GameObject:
   - component: {fileID: 740093737}
   - component: {fileID: 740093736}
   - component: {fileID: 740093735}
-  - component: {fileID: 740093734}
   m_Layer: 5
   m_Name: Btn_FrenchFries
   m_TagString: Untagged
@@ -6640,19 +6555,6 @@ RectTransform:
   m_AnchoredPosition: {x: -340, y: -154}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &740093734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740093732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: c341bcb1495365d498e7cd62b0188c9e, type: 2}
 --- !u!114 &740093735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6697,7 +6599,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 740093734}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -7821,9 +7723,8 @@ GameObject:
   - component: {fileID: 866031336}
   - component: {fileID: 866031335}
   - component: {fileID: 866031334}
-  - component: {fileID: 866031333}
   m_Layer: 5
-  m_Name: Btn_cupcake
+  m_Name: Btn_lemoncupcake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7849,19 +7750,6 @@ RectTransform:
   m_AnchoredPosition: {x: 407, y: -203}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &866031333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866031331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 201e25b0c57fae74294f4f154f5f5514, type: 2}
 --- !u!114 &866031334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7906,7 +7794,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 866031333}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -7938,8 +7826,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5224895537623879504, guid: 9d760c0649343b74aa9845a8df99403c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8843,7 +8731,6 @@ GameObject:
   - component: {fileID: 965321223}
   - component: {fileID: 965321222}
   - component: {fileID: 965321221}
-  - component: {fileID: 965321220}
   - component: {fileID: 965321224}
   m_Layer: 5
   m_Name: Btn_mixed_juice
@@ -8872,19 +8759,6 @@ RectTransform:
   m_AnchoredPosition: {x: 81.6973, y: -129}
   m_SizeDelta: {x: 163.3946, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &965321220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965321218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: d7af3a0214ea390429fec6071ff55e1d, type: 2}
 --- !u!114 &965321221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9508,7 +9382,6 @@ GameObject:
   - component: {fileID: 1054805981}
   - component: {fileID: 1054805980}
   - component: {fileID: 1054805979}
-  - component: {fileID: 1054805978}
   m_Layer: 5
   m_Name: Btn_FriedChicken
   m_TagString: Untagged
@@ -9536,19 +9409,6 @@ RectTransform:
   m_AnchoredPosition: {x: -340, y: -107}
   m_SizeDelta: {x: 160, y: 31.3149}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1054805978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054805976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 56f456327dc900a43a95bc87bfe283f2, type: 2}
 --- !u!114 &1054805979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9593,7 +9453,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1054805978}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -10102,7 +9962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1137215787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10387,7 +10247,6 @@ GameObject:
   - component: {fileID: 1248855703}
   - component: {fileID: 1248855702}
   - component: {fileID: 1248855701}
-  - component: {fileID: 1248855700}
   - component: {fileID: 1248855704}
   m_Layer: 5
   m_Name: Btn_chocolate
@@ -10416,19 +10275,6 @@ RectTransform:
   m_AnchoredPosition: {x: 85.5015, y: -115}
   m_SizeDelta: {x: 171.003, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1248855700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248855698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 513df54b89a16c6418c17b604c797106, type: 2}
 --- !u!114 &1248855701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10473,7 +10319,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1248855700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -10930,9 +10776,9 @@ RectTransform:
   - {fileID: 862448918}
   m_Father: {fileID: 1650696515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -45}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316272751
@@ -10947,7 +10793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: a008e576f42092d46a8a3dd565c20de9, type: 2}
+  product: {fileID: 11400000, guid: 5fbaafb5b33c41f4393187004c282ebc, type: 2}
 --- !u!114 &1316272752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11042,7 +10888,6 @@ GameObject:
   - component: {fileID: 1317447248}
   - component: {fileID: 1317447247}
   - component: {fileID: 1317447246}
-  - component: {fileID: 1317447245}
   - component: {fileID: 1317447249}
   m_Layer: 5
   m_Name: Btn_toffenut
@@ -11071,19 +10916,6 @@ RectTransform:
   m_AnchoredPosition: {x: 85.5015, y: -45}
   m_SizeDelta: {x: 171.003, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1317447245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317447243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 6fef2787c448e5b4ca222e47080aaca0, type: 2}
 --- !u!114 &1317447246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11128,7 +10960,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1317447245}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -11210,7 +11042,6 @@ GameObject:
   - component: {fileID: 1320347645}
   - component: {fileID: 1320347644}
   - component: {fileID: 1320347643}
-  - component: {fileID: 1320347642}
   - component: {fileID: 1320347646}
   m_Layer: 5
   m_Name: Btn_caramel
@@ -11239,19 +11070,6 @@ RectTransform:
   m_AnchoredPosition: {x: 85.5015, y: -155}
   m_SizeDelta: {x: 171.003, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1320347642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320347640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: e50fcd498e08e7e418ce57cb0fdb3aa0, type: 2}
 --- !u!114 &1320347643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11296,7 +11114,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1320347642}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -11378,7 +11196,6 @@ GameObject:
   - component: {fileID: 1326975431}
   - component: {fileID: 1326975430}
   - component: {fileID: 1326975429}
-  - component: {fileID: 1326975428}
   m_Layer: 5
   m_Name: Btn_kruvasan
   m_TagString: Untagged
@@ -11406,19 +11223,6 @@ RectTransform:
   m_AnchoredPosition: {x: 407, y: -80}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1326975428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326975426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 87b9200604d126e4584a42ddf255abdf, type: 2}
 --- !u!114 &1326975429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11463,7 +11267,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1326975428}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -11495,8 +11299,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 117856950837805965, guid: 680aa39bce30f754891a3d55a656a72c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11525,7 +11329,6 @@ GameObject:
   - component: {fileID: 1329001799}
   - component: {fileID: 1329001798}
   - component: {fileID: 1329001797}
-  - component: {fileID: 1329001796}
   m_Layer: 5
   m_Name: Btn_cookie
   m_TagString: Untagged
@@ -11553,19 +11356,6 @@ RectTransform:
   m_AnchoredPosition: {x: 407, y: -160}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1329001796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329001794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 0b652890958386a429c3a83d613eef56, type: 2}
 --- !u!114 &1329001797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11610,7 +11400,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1329001796}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -11642,8 +11432,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: eb14145a5d7bc764baace9b6700435b7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11826,7 +11616,6 @@ GameObject:
   - component: {fileID: 1358542372}
   - component: {fileID: 1358542371}
   - component: {fileID: 1358542370}
-  - component: {fileID: 1358542369}
   m_Layer: 5
   m_Name: Btn_cheesecake
   m_TagString: Untagged
@@ -11854,19 +11643,6 @@ RectTransform:
   m_AnchoredPosition: {x: 407, y: -35}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1358542369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358542367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 3182be475c6926f4fa3c4237511ab0a5, type: 2}
 --- !u!114 &1358542370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11911,7 +11687,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1358542369}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -11943,8 +11719,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8458033407448355251, guid: d3b10da5a4aba4342966580be1c68e3e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11973,7 +11749,6 @@ GameObject:
   - component: {fileID: 1410293834}
   - component: {fileID: 1410293833}
   - component: {fileID: 1410293832}
-  - component: {fileID: 1410293831}
   m_Layer: 5
   m_Name: Btn_Ketchup
   m_TagString: Untagged
@@ -12001,19 +11776,6 @@ RectTransform:
   m_AnchoredPosition: {x: -159, y: -154}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1410293831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410293829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 876d3b5d38a06d04b8b6ce444c1b28fd, type: 2}
 --- !u!114 &1410293832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12058,7 +11820,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1410293831}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -13037,7 +12799,6 @@ GameObject:
   - component: {fileID: 1602442973}
   - component: {fileID: 1602442972}
   - component: {fileID: 1602442971}
-  - component: {fileID: 1602442970}
   - component: {fileID: 1602442974}
   m_Layer: 5
   m_Name: Btn_ice
@@ -13066,19 +12827,6 @@ RectTransform:
   m_AnchoredPosition: {x: 85.5015, y: -75}
   m_SizeDelta: {x: 171.003, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1602442970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602442968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 0b2f0e24fe051764092644bfaa9d9e42, type: 2}
 --- !u!114 &1602442971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13123,7 +12871,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1602442970}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -13203,7 +12951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1616380547}
   m_Layer: 5
-  m_Name: Panel_KitchenManual
+  m_Name: Panel_Pizza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13242,7 +12990,6 @@ GameObject:
   - component: {fileID: 1619120539}
   - component: {fileID: 1619120538}
   - component: {fileID: 1619120537}
-  - component: {fileID: 1619120536}
   - component: {fileID: 1619120540}
   m_Layer: 5
   m_Name: Btn_americano
@@ -13271,19 +13018,6 @@ RectTransform:
   m_AnchoredPosition: {x: 87.72975, y: -105}
   m_SizeDelta: {x: 175.4595, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1619120536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619120534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: bdd8a9c66c280a9439acc4d940307741, type: 2}
 --- !u!114 &1619120537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13328,7 +13062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1619120536}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -13436,7 +13170,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 537, y: -103}
-  m_SizeDelta: {x: 200, y: 90}
+  m_SizeDelta: {x: 200, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1650696516
 MonoBehaviour:
@@ -13490,7 +13224,6 @@ GameObject:
   - component: {fileID: 1658054576}
   - component: {fileID: 1658054575}
   - component: {fileID: 1658054574}
-  - component: {fileID: 1658054573}
   - component: {fileID: 1658054577}
   m_Layer: 5
   m_Name: Btn_orange_juice
@@ -13519,19 +13252,6 @@ RectTransform:
   m_AnchoredPosition: {x: 81.6973, y: -15}
   m_SizeDelta: {x: 163.3946, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1658054573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658054571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: 4ed005b8c7e6e204a88228f780257772, type: 2}
 --- !u!114 &1658054574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14638,7 +14358,6 @@ GameObject:
   - component: {fileID: 1894023641}
   - component: {fileID: 1894023640}
   - component: {fileID: 1894023639}
-  - component: {fileID: 1894023638}
   m_Layer: 5
   m_Name: Btn_Mayo
   m_TagString: Untagged
@@ -14666,19 +14385,6 @@ RectTransform:
   m_AnchoredPosition: {x: -159, y: -107.66}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1894023638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894023636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: c3ed82a06ba37fe4ba0f7d292fe2472a, type: 2}
 --- !u!114 &1894023639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14723,7 +14429,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1894023638}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -14785,7 +14491,6 @@ GameObject:
   - component: {fileID: 1929591500}
   - component: {fileID: 1929591499}
   - component: {fileID: 1929591498}
-  - component: {fileID: 1929591497}
   - component: {fileID: 1929591501}
   m_Layer: 5
   m_Name: Btn_lemonade
@@ -14814,19 +14519,6 @@ RectTransform:
   m_AnchoredPosition: {x: 81.6973, y: -91}
   m_SizeDelta: {x: 163.3946, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1929591497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929591495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3695c15d4ac59d43a2379bf629a7b62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product: {fileID: 11400000, guid: e77605517a761334c9b348b54c143feb, type: 2}
 --- !u!114 &1929591498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14871,7 +14563,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1929591497}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -15225,7 +14917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1998600994
 RectTransform:
   m_ObjectHideFlags: 0
