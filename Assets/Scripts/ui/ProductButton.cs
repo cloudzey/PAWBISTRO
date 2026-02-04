@@ -21,4 +21,5 @@ public class ProductButton : MonoBehaviour
         HandSystem.Instance.Add(product);
         Debug.Log($"Hand'e eklendi: {product.displayName}");
     }
+
 }
