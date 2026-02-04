@@ -8,7 +8,7 @@ public enum ItemCategory
 }
 
 [CreateAssetMenu(menuName = "Pawbistro/Items/Base Item")]
-public class BaseItemData : ScriptableObject
+public class BaseItemData : ProductData
 {
     [Header("Identity")]
     public string id;

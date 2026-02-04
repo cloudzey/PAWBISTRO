@@ -10,7 +10,7 @@ public enum AddOnType
 }
 
 [CreateAssetMenu(menuName = "Pawbistro/Items/Add On")]
-public class AddOnData : ScriptableObject
+public class AddOnData : ProductData
 {
     [Header("Identity")]
     public string id;              // ice, vanilla, cheddar
