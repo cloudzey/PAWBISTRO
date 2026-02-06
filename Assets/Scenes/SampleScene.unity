@@ -1088,7 +1088,7 @@ MonoBehaviour:
         m_MethodName: AddHamburgerIngredient
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: e119ab80006836945aba3cecd8e4ad28, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 1b44b7a4b1188ac4fa2fd9103e84ce70, type: 2}
           m_ObjectArgumentAssemblyTypeName: ProductData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2033,9 +2033,9 @@ RectTransform:
   - {fileID: 1666823547}
   m_Father: {fileID: 1650696515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -15}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &166100694
@@ -2316,9 +2316,9 @@ RectTransform:
   - {fileID: 1292243163}
   m_Father: {fileID: 1650696515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -75}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183025177
@@ -3569,9 +3569,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11400000, guid: 296f1515eaedbe44888a1091638e5048, type: 2}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4367,7 +4367,7 @@ MonoBehaviour:
         m_MethodName: AddHamburgerIngredient
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: dbddcdce8293cb74f8d4d7f53c823f35, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 042e0d411a6bedc4d9feb59de50f393c, type: 2}
           m_ObjectArgumentAssemblyTypeName: ProductData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6323,7 +6323,7 @@ MonoBehaviour:
         m_MethodName: AddHotdogIngredient
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 78049d56f22380743aa8e0061e5a680d, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 4ef3c4de13704bf4aaa2e9a8d9188088, type: 2}
           m_ObjectArgumentAssemblyTypeName: ProductData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6669,9 +6669,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11400000, guid: 47af83d6b058ca6478b307fa8d4af92e, type: 2}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8622,7 +8622,7 @@ MonoBehaviour:
         m_MethodName: AddHamburgerIngredient
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: bc8d4d79dca972741831c9108a30a6e1, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 90116e065d18a4c4f9a9e89e925e0548, type: 2}
           m_ObjectArgumentAssemblyTypeName: ProductData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -9423,7 +9423,7 @@ MonoBehaviour:
         m_MethodName: AddHamburgerIngredient
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: b75469177ae3f66499ebf2e3ddefc186, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 413643000f71433438b462ad6a98266c, type: 2}
           m_ObjectArgumentAssemblyTypeName: ProductData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -9551,9 +9551,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11400000, guid: 7ea16a47ff8319445b36798ff75794f4, type: 2}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10888,9 +10888,9 @@ RectTransform:
   - {fileID: 862448918}
   m_Father: {fileID: 1650696515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -45}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316272751
@@ -12002,9 +12002,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11400000, guid: 68fbb5b61966700459df8d3aec3a47c0, type: 2}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13152,7 +13152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1616380547
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13380,7 +13380,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 537, y: -103}
-  m_SizeDelta: {x: 200, y: 0}
+  m_SizeDelta: {x: 200, y: 90}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1650696516
 MonoBehaviour:
@@ -13935,7 +13935,7 @@ MonoBehaviour:
         m_MethodName: AddHotdogIngredient
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 07066d11131abeb458c4573bdef32e27, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: be359ceac1ff61c469fa4e2f9af42d70, type: 2}
           m_ObjectArgumentAssemblyTypeName: ProductData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14253,7 +14253,7 @@ MonoBehaviour:
         m_MethodName: AddHamburgerIngredient
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 1d0f565761c2bad47a1f7a5cc7893898, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 97c20ea1a25d18644972011b80c36fdb, type: 2}
           m_ObjectArgumentAssemblyTypeName: ProductData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14653,9 +14653,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11400000, guid: bff185f9009df6c4bb33b480272ef22f, type: 2}
         m_TargetAssemblyTypeName: ProductButton, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15155,7 +15155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1998600994
 RectTransform:
   m_ObjectHideFlags: 0
