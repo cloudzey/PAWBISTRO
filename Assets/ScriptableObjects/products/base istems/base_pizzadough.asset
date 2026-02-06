@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c76de45b823b2fb459d281e5b2b28ed8, type: 3}
   m_Name: base_pizzadough
   m_EditorClassIdentifier: 
-  id: 
-  displayName: 
+  id: pizzadough
+  displayName: pizzadough
   icon: {fileID: 0}
   price: 10
   type: 0
@@ -21,4 +21,4 @@ MonoBehaviour:
   displayName: 
   category: 0
   icon: {fileID: 0}
-  basePrice: 0
+  basePrice: 3
