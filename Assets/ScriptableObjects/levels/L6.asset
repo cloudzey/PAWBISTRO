@@ -16,7 +16,6 @@ MonoBehaviour:
   targetGold: 100
   previousLevel: {fileID: 11400000, guid: 13a0cb0704d9ab343bc9afa8833827b3, type: 2}
   newUnlockedProducts:
-  - {fileID: 11400000, guid: fc224635fb0c6f14eb1efb1d42b81676, type: 2}
-  - {fileID: 11400000, guid: 03a645132def2e94e89593038c3670d5, type: 2}
-  - {fileID: 11400000, guid: d7af3a0214ea390429fec6071ff55e1d, type: 2}
-  - {fileID: 11400000, guid: 2b5e393d8b923954db8a70c5326d740f, type: 2}
+  - {fileID: 11400000, guid: 91e82f96fdd054b47a73c67c4239bd8e, type: 2}
+  - {fileID: 11400000, guid: c0f97fb73f41571479d42cbbf33accb7, type: 2}
+  - {fileID: 11400000, guid: 85476aedee6a6ca48a7d4f513a654396, type: 2}
