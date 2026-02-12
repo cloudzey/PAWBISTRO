@@ -13,16 +13,13 @@ MonoBehaviour:
   m_Name: L1
   m_EditorClassIdentifier: 
   levelIndex: 1
-  targetGold: 250
+  targetGold: 135
   previousLevel: {fileID: 0}
   newUnlockedProducts:
-  - {fileID: 11400000, guid: 201e25b0c57fae74294f4f154f5f5514, type: 2}
-  - {fileID: 11400000, guid: bd5194354e7e7bd439750efe820b1a40, type: 2}
-  - {fileID: 11400000, guid: bdd8a9c66c280a9439acc4d940307741, type: 2}
-  - {fileID: 11400000, guid: df339c9b02b1c8c4392d8f8c0943130d, type: 2}
-  - {fileID: 11400000, guid: 0b2f0e24fe051764092644bfaa9d9e42, type: 2}
-  - {fileID: 11400000, guid: e77605517a761334c9b348b54c143feb, type: 2}
-  - {fileID: 11400000, guid: 56f456327dc900a43a95bc87bfe283f2, type: 2}
-  - {fileID: 11400000, guid: c341bcb1495365d498e7cd62b0188c9e, type: 2}
-  - {fileID: 11400000, guid: 876d3b5d38a06d04b8b6ce444c1b28fd, type: 2}
-  - {fileID: 11400000, guid: c3ed82a06ba37fe4ba0f7d292fe2472a, type: 2}
+  - {fileID: 11400000, guid: 64a63f29efd91264196e32692b89b9ca, type: 2}
+  - {fileID: 11400000, guid: a9e66f8e54f8dfd4ba4fd0d50c273c0e, type: 2}
+  - {fileID: 11400000, guid: b114d838754a845439b8a40696ac844b, type: 2}
+  - {fileID: 11400000, guid: e3e385dc715572441bee6345ba80571e, type: 2}
+  - {fileID: 11400000, guid: 17fa8ee7a1d873c42ae532a2d72a6a19, type: 2}
+  - {fileID: 11400000, guid: 629253d8f950a9a438b64d237740ea57, type: 2}
+  - {fileID: 11400000, guid: 47af83d6b058ca6478b307fa8d4af92e, type: 2}

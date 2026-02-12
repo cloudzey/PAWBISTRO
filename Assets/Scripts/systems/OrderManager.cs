@@ -24,34 +24,64 @@ public class OrderManager : MonoBehaviour
     {
         ClearCustomers();
 
-        int customerCount = Random.value < 0.5f ? 1 : 2;
-
         if (finalProducts == null || finalProducts.Count == 0)
         {
-            Debug.LogError("Final Products listesi boþ! Order gelmez.");
+            Debug.LogError("Final products listesi boþ! Order gelmez.");
             return;
         }
+
+        if (customerPrefab == null)
+        {
+            Debug.LogError("Customer Prefab boþ!");
+            return;
+        }
+
+        if (customerSpotA == null || customerSpotB == null)
+        {
+            Debug.LogError("CustomerSpotA / CustomerSpotB boþ!");
+            return;
+        }
+
+        int customerCount = Random.value < 0.5f ? 1 : 2;
 
         List<ProductData> pool = new List<ProductData>(finalProducts);
 
         ProductData order1 = GetRandomProduct(pool);
-        customerA = Instantiate(customerPrefab, customerSpotA.position, Quaternion.identity);
+        customerA = SpawnCustomerAtSpot(customerSpotA);
         customerA.Init(order1, this);
 
         if (customerCount == 2)
         {
             ProductData order2 = GetRandomProduct(pool);
-            customerB = Instantiate(customerPrefab, customerSpotB.position, Quaternion.identity);
+            customerB = SpawnCustomerAtSpot(customerSpotB);
             customerB.Init(order2, this);
         }
     }
 
+    private CustomerController SpawnCustomerAtSpot(Transform spot)
+    {
+        var c = Instantiate(customerPrefab, spot);
+
+        c.transform.localPosition = Vector3.zero;
+        c.transform.localRotation = Quaternion.identity;
+        c.transform.localScale = Vector3.one;
+
+        if (c.transform is RectTransform rt)
+        {
+            rt.anchoredPosition = Vector2.zero;
+            rt.localRotation = Quaternion.identity;
+            rt.localScale = Vector3.one;
+        }
+
+        return c;
+    }
+
     private ProductData GetRandomProduct(List<ProductData> pool)
     {
-        int index = Random.Range(0, pool.Count);
-        ProductData product = pool[index];
-        pool.RemoveAt(index);
-        return product;
+        int i = Random.Range(0, pool.Count);
+        ProductData picked = pool[i];
+        pool.RemoveAt(i);
+        return picked;
     }
 
     private void ClearCustomers()
@@ -65,16 +95,16 @@ public class OrderManager : MonoBehaviour
 
     public void OnCustomerClicked(CustomerController customer)
     {
-        ProductData held = handSystem.FirstOrNull;
-
-        if (held == null)
+        if (handSystem == null)
         {
-            Debug.Log("Elinde ürün yok");
+            Debug.LogError("OrderManager: HandSystem referansý yok!");
             return;
         }
 
-        bool served = customer.TryServe(held);
+        ProductData held = handSystem.FirstOrNull;
+        if (held == null) return;
 
+        bool served = customer.TryServe(held);
         if (served)
         {
             handSystem.Clear();
@@ -84,14 +114,14 @@ public class OrderManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Yanlýþ ürün verdin");
+            Debug.Log("Yanlýþ ürün!");
         }
     }
 
     private bool AllServed()
     {
-        bool aDone = (customerA == null || customerA.IsServed);
-        bool bDone = (customerB == null || customerB.IsServed);
-        return aDone && bDone;
+        bool aOk = (customerA == null) || customerA.IsServed;
+        bool bOk = (customerB == null) || customerB.IsServed;
+        return aOk && bOk;
     }
 }

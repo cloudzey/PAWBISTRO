@@ -6,13 +6,11 @@ public class HandSystem : MonoBehaviour
     public static HandSystem Instance { get; private set; }
 
     [Header("UI References")]
-    [SerializeField] private Transform handContent;      // Hand_Content (RectTransform da olabilir)
-    [SerializeField] private HandItemUI handItemPrefab;  // PF_HandItem (üstünde HandItemUI scripti olan prefab)
+    [SerializeField] private Transform handContent;
+    [SerializeField] private HandItemUI handItemPrefab;
 
-    // Elimizdeki item listesi (dışarıdan değiştirilmesin diye private)
     private readonly List<ProductData> Items = new();
 
-    // Dışarıya sadece okunur liste veriyoruz
     public IReadOnlyList<ProductData> CurrentItems => Items;
 
     public int Count => Items.Count;
@@ -59,7 +57,6 @@ public class HandSystem : MonoBehaviour
 
     private void RefreshUI()
     {
-        // Debug için: eksik referans varsa anında yakalayalım
         if (handContent == null)
         {
             Debug.LogError("[HandSystem] handContent NULL! Inspector'da Hand_Content atadın mı?");
@@ -72,11 +69,9 @@ public class HandSystem : MonoBehaviour
             return;
         }
 
-        // Öncekileri temizle
         for (int i = handContent.childCount - 1; i >= 0; i--)
             Destroy(handContent.GetChild(i).gameObject);
 
-        // Yenileri bas
         for (int i = 0; i < Items.Count; i++)
         {
             int captured = i;
