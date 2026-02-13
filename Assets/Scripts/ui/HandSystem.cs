@@ -33,13 +33,17 @@ public class HandSystem : MonoBehaviour
         Instance = this;
     }
 
-    public void Add(ProductData product)
-    {
-        if (product == null) return;
+   public void Add(ProductData product)
+{
+    if (product == null) return;
 
-        Items.Add(product);
-        RefreshUI();
-    }
+    // elde tek ürün: önce temizle
+    Items.Clear();
+    Items.Add(product);
+
+    RefreshUI();
+}
+
 
     public void RemoveAt(int index)
     {
