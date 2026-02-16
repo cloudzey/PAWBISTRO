@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: L9
   m_EditorClassIdentifier: 
   levelIndex: 9
-  targetGold: 100
+  targetGold: 1000
   previousLevel: {fileID: 11400000, guid: 8c333a5a35098324c94065a75c3318b5, type: 2}
   newUnlockedProducts:
   - {fileID: 11400000, guid: b71fcc1b54b798146af954fa53abd24b, type: 2}

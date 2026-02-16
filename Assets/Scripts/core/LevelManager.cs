@@ -1,6 +1,9 @@
 
 using UnityEngine;
 using TMPro;
+using System.Linq;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class LevelManager : MonoBehaviour
 {
@@ -9,7 +12,16 @@ public class LevelManager : MonoBehaviour
     private ProductData currentOrder;
     public TMP_Text coinText;
     private int coin = 0;
-    [Header("Craft - Hamburger")]
+[Header("Level Progress UI")]
+public TextMeshProUGUI levelText;
+public Image expFill;
+
+[Header("Levels (L1..L10)")]
+public List<LevelData> levels = new List<LevelData>();
+
+private int currentLevelIdx = 0; // levels listesinde index
+
+ [Header("Craft - Hamburger")]
 [SerializeField] private ProductData hamburgerProduct;
 [SerializeField] private ProductData bunProduct;
 [SerializeField] private ProductData lettuceProduct;
@@ -39,7 +51,18 @@ public ProductData CurrentOrder => currentOrder;
     private void Start()
     {
         Debug.Log("LevelManager Start çalıştı: " + gameObject.name);
+          // Level listesi boşsa patlamasın
+    if (levels != null && levels.Count > 0)
+    {
+        // levelIndex'e göre sırala (L1, L2, L3...)
+        levels = levels.OrderBy(l => l.levelIndex).ToList();
+
+        // Başlangıç: L1
+        currentLevelIdx = 0;
+        currentLevel = levels[currentLevelIdx];
+    }
         StartLevel();
+        UpdateLevelUI();
     }
 
     void UpdateCoinUI()
@@ -51,6 +74,8 @@ public void AddCoin(int amount)
 {
     coin += amount;
     UpdateCoinUI();
+     CheckLevelUp();   // coin hedefi geçti mi?
+    UpdateLevelUI();  // bar + Level yazısı güncellensin
 }
 
     public void StartLevel()
@@ -61,6 +86,34 @@ public void AddCoin(int amount)
         UpdateCoinUI();
         CreateNewOrder();
     }
+    void CheckLevelUp()
+{
+    if (levels == null || levels.Count == 0) return;
+    if (currentLevel == null) return;
+
+    // Büyük para gelirse (ör: +500) birden fazla level atlayabilsin
+    while (currentLevelIdx < levels.Count - 1 && coin >= currentLevel.targetGold)
+    {
+        currentLevelIdx++;
+        currentLevel = levels[currentLevelIdx];
+
+        StartLevel(); // senin mevcut unlock/order akışın burada
+    }
+}
+void UpdateLevelUI()
+{
+    if (currentLevel == null) return;
+
+    if (levelText != null)
+        levelText.text = "Level: " + currentLevel.levelIndex;
+
+    if (expFill != null)
+    {
+        float progress = (float)coin / currentLevel.targetGold;
+        expFill.fillAmount = Mathf.Clamp01(progress);
+    }
+}
+
 
     public void CreateNewOrder()
 {
