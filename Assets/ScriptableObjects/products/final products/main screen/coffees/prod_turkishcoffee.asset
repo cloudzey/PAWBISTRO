@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: turkish_coffee
   displayName: Turkish Coffee
-  icon: {fileID: 0}
+  icon: {fileID: -2768086466253753386, guid: ff729320edabbea468d58b5f849ebfb7, type: 3}
   price: 10
   type: 0
-  id: 
-  displayName: 
   category: 0
-  icon: {fileID: 0}
   basePrice: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: lemonade
   displayName: Lemonade
-  icon: {fileID: 0}
+  icon: {fileID: 1429044051238584146, guid: d8e2c89416d56f7439a65494cba5e20d, type: 3}
   price: 10
   type: 0
   category: 0

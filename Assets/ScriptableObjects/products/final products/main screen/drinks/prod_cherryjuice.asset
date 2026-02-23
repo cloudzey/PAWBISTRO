@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: cherry_juice
   displayName: Cherry Juice
-  icon: {fileID: 0}
+  icon: {fileID: 8188791409242887826, guid: 9dcdc80827f000047a62c9ddc1e1b91b, type: 3}
   price: 10
   type: 0
   category: 0

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: pawtea
   displayName: Paw Tea
-  icon: {fileID: 0}
+  icon: {fileID: 1386241189967991393, guid: 0709134cca677cf4fa9f2c72bd221902, type: 3}
   price: 9
   type: 0

@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: ice_americano
   displayName: Ice Americano
-  icon: {fileID: 0}
+  icon: {fileID: -1015457150675613878, guid: b007ec27776412a42bd9672ebf9fb89e, type: 3}
   price: 10
   type: 0
-  id: 
-  displayName: 
   category: 0
-  icon: {fileID: 0}
   basePrice: 0

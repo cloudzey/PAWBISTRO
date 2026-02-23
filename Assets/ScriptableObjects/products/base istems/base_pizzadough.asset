@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: pizzadough
   displayName: pizzadough
-  icon: {fileID: 0}
+  icon: {fileID: -8658914353232579547, guid: d1fef468912e40a4d9c74d66b5f1fe27, type: 3}
   price: 10
   type: 0
-  id: 
-  displayName: 
   category: 0
-  icon: {fileID: 0}
   basePrice: 3

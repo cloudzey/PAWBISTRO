@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: latte
   displayName: Latte
-  icon: {fileID: 0}
+  icon: {fileID: 996550823693121895, guid: 27e08d2054aee5945b9b8da6495bc6c2, type: 3}
   price: 10
   type: 0
-  id: 
-  displayName: 
   category: 0
-  icon: {fileID: 0}
   basePrice: 0

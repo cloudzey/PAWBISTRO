@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: orange_juice
   displayName: Orange Juice
-  icon: {fileID: 0}
+  icon: {fileID: -2968179624802766359, guid: 85d927896758d8a469ea2eb97dc75290, type: 3}
   price: 10
   type: 0
   category: 0

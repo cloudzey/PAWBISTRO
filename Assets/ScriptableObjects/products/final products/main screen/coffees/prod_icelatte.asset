@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: ice_latte
   displayName: Ice Latte
-  icon: {fileID: 0}
+  icon: {fileID: -769453796175566222, guid: a94d87c1e4f867044be62f2e087ab223, type: 3}
   price: 10
   type: 0
-  id: 
-  displayName: 
   category: 0
-  icon: {fileID: 0}
   basePrice: 0

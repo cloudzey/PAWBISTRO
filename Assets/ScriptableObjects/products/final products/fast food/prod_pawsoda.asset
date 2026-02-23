@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: pawsoda
   displayName: Paw soda
-  icon: {fileID: 0}
+  icon: {fileID: -1556071078381340475, guid: 98b4ae4578267dc4781594f50d12c46e, type: 3}
   price: 8
   type: 0

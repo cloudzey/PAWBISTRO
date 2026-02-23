@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: pawcoke
   displayName: Paw Coke
-  icon: {fileID: 0}
+  icon: {fileID: -2410998794679384376, guid: 7fb419659f02622419de7ad7547f5f83, type: 3}
   price: 6
   type: 0

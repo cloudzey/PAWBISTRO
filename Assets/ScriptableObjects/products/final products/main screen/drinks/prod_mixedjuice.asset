@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: mixed_juice
   displayName: Mixed Juice
-  icon: {fileID: 0}
+  icon: {fileID: -2829345203191601223, guid: 12e4ffacbcf76ce4aa62b51a6c0763ec, type: 3}
   price: 10
   type: 0
   category: 0

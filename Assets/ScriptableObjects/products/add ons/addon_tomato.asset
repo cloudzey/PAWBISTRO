@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 
   displayName: 
-  icon: {fileID: 0}
+  icon: {fileID: 7603946725903029864, guid: 75e6efbefda9a2d42b8f4abf8263eba3, type: 3}
   price: 10
   type: 0
-  id: 
-  displayName: 
-  type: 0
+  addonType: 0
   allowedCategories: 
-  icon: {fileID: 0}
   priceIncrease: 0
