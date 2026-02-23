@@ -1,86 +1,101 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class HandSystem : MonoBehaviour
 {
     public static HandSystem Instance { get; private set; }
 
-    [Header("UI References")]
-    [SerializeField] private Transform handContent;
-    [SerializeField] private HandItemUI handItemPrefab;
+    [Header("Recipe")]
+    [SerializeField] private RecipeDatabase recipeDb;
 
-    private readonly List<ProductData> Items = new();
+    private BaseItemData currentBase;
+    private readonly List<AddOnData> currentAddOns = new();
 
-    public IReadOnlyList<ProductData> CurrentItems => Items;
-
-    public int Count => Items.Count;
-
-    public ProductData FirstOrNull => (Items.Count > 0) ? Items[0] : null;
-
-    public bool HasItem(ProductData product)
-    {
-        if (product == null) return false;
-        return Items.Contains(product);
-    }
+    public ProductData CurrentFinal { get; private set; }
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
         Instance = this;
     }
 
-   public void Add(ProductData product)
-{
-    if (product == null) return;
-
-    // elde tek ürün: önce temizle
-    Items.Clear();
-    Items.Add(product);
-
-    RefreshUI();
-}
-
-
-    public void RemoveAt(int index)
+    public void Add(ProductData item)
     {
-        if (index < 0 || index >= Items.Count) return;
+        if (item == null) return;
 
-        Items.RemoveAt(index);
-        RefreshUI();
+        if (item is BaseItemData b)
+        {
+            currentBase = b;
+            currentAddOns.Clear();
+        }
+        else if (item is AddOnData a)
+        {
+            if (!currentAddOns.Contains(a))
+                currentAddOns.Add(a);
+        }
+        else
+        {
+            CurrentFinal = item;
+            return;
+        }
+
+        Resolve();
     }
 
     public void Clear()
     {
-        Items.Clear();
-        RefreshUI();
+        currentBase = null;
+        currentAddOns.Clear();
+        CurrentFinal = null;
     }
 
-    private void RefreshUI()
+    private void Resolve()
     {
-        if (handContent == null)
+        CurrentFinal = null;
+
+        if (currentBase == null) return;
+
+        if (currentAddOns.Count == 0)
         {
-            Debug.LogError("[HandSystem] handContent NULL! Inspector'da Hand_Content atadın mı?");
+            CurrentFinal = currentBase;
             return;
         }
 
-        if (handItemPrefab == null)
-        {
-            Debug.LogError("[HandSystem] handItemPrefab NULL! Inspector'da PF_HandItem prefabını atadın mı?");
-            return;
-        }
+        if (recipeDb == null || recipeDb.recipes == null) return;
 
-        for (int i = handContent.childCount - 1; i >= 0; i--)
-            Destroy(handContent.GetChild(i).gameObject);
-
-        for (int i = 0; i < Items.Count; i++)
+        foreach (var r in recipeDb.recipes)
         {
-            int captured = i;
-            var ui = Instantiate(handItemPrefab, handContent);
-            ui.Bind(Items[i], () => RemoveAt(captured));
+            if (r == null) continue;
+            if (r.baseItem != currentBase) continue;
+
+            if (SameAddOnSet(r.requiredAddOns, currentAddOns))
+            {
+                CurrentFinal = r.resultFinalProduct;
+                return;
+            }
         }
+        CurrentFinal = null;
     }
+
+    private bool SameAddOnSet(List<AddOnData> need, List<AddOnData> have)
+    {
+        if (need == null) need = new List<AddOnData>();
+        if (have == null) have = new List<AddOnData>();
+
+        if (need.Count != have.Count) return false;
+        return !need.Except(have).Any();
+    }
+
+    public bool HasItem()
+    {
+        return CurrentFinal != null;
+    }
+    public ProductData Current => CurrentFinal;
+    public ProductData FirstOrNull => CurrentFinal;
+    public bool HasItem(ProductData item)
+    {
+        return CurrentFinal != null && CurrentFinal == item;
+    }
+
+
 }
