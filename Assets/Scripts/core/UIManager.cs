@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum ScreenType { MainCounter, FastFoodCounter, KitchenManual, DrinksMenu,CoffeeMenu,SyrupMenu }
+public enum ScreenType { MainCounter, FastFoodCounter, KitchenManual, DrinksMenu,CoffeeMenu,SyrupMenu ,Freezer}
 
 public class UIManager : MonoBehaviour
 {
@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     public GameObject panelSyrupMenu;
     public GameObject panelMainCounter;
      public GameObject panelFastFoodCounter;
+     public GameObject panelFreezer;
 
 public void OpenMainCounter()
 {
@@ -35,7 +36,7 @@ public void OpenFastFoodCounter()
         Show(ScreenType.MainCounter);
     }
     private bool IsOverlay(ScreenType s) =>
-    s == ScreenType.DrinksMenu || s == ScreenType.CoffeeMenu || s == ScreenType.SyrupMenu;
+    s == ScreenType.DrinksMenu || s == ScreenType.CoffeeMenu || s == ScreenType.SyrupMenu || s == ScreenType.Freezer;
 
     public void Show(ScreenType screen)
 {
@@ -53,6 +54,7 @@ public void OpenFastFoodCounter()
     panelDrinksMenu.SetActive(screen == ScreenType.DrinksMenu);
     panelCoffeeMenu.SetActive(screen == ScreenType.CoffeeMenu);
     panelSyrupMenu.SetActive(screen == ScreenType.SyrupMenu);
+    panelFreezer.SetActive(screen == ScreenType.Freezer);
 }
     public void ToggleDrinksMenu()
 {
@@ -90,6 +92,17 @@ public void ToggleSyrupMenu()
         Show(ScreenType.SyrupMenu);
     }
 }
+    public void ToggleFreezer()
+    {
+        if(CurrentScreen == ScreenType.Freezer)
+        {
+            Show(lastScreenBeforeOverlay);
+        }
+        else{
+            lastScreenBeforeOverlay = CurrentScreen;
+            Show(ScreenType.Freezer);
+        }
+    }
 
 
 
@@ -99,5 +112,6 @@ public void ToggleSyrupMenu()
     public void ShowKitchen() => Show(ScreenType.KitchenManual);
     public void ShowDrinksMenu() => Show(ScreenType.DrinksMenu);
     public void ShowSyrupMenu()  => Show(ScreenType.SyrupMenu);
+    public void ShowFreezer()  => Show(ScreenType.Freezer);
 
 }
